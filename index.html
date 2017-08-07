@@ -11,14 +11,14 @@
   
   function myswal(title,text,cb){
    swal({
-      title: title,
-      text: text,
-     type: "info",
-   showCancelButton: true,
-   confirmButtonColor: "#DD6B55",confirmButtonText: "Yes",
-   cancelButtonText: "No",
-   closeOnConfirm: false,
-   closeOnCancel: false
+       title: title,
+       text: text,
+       type: "info",
+       showCancelButton: true,
+       confirmButtonColor: "Yes",
+       cancelButtonText: "No",
+       closeOnConfirm: false,
+       closeOnCancel: false
     }, function(){
       cb();
     }); 
