@@ -12,13 +12,7 @@
   function myswal(title,text,cb){
    swal({
       title: title,
-      text: text,
-      type: "info",
-      showCancelButton: true,
-      confirmButtonColor: "#DD6B55",
-      confirmButtonText: "Yes, delete it!",
-      closeOnConfirm: false,
-      html: false
+      text: text
     }, function(){
       cb();
     }); 
