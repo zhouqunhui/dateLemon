@@ -1,9 +1,30 @@
 <html>
+  <head>
   <title>很高兴遇见你</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script src="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.js"></script>
+<link href="https://cdn.bootcss.com/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+  </head>
 <body>
 <script>
+  function myalert(title,text){
+   swal({
+      title: title,
+      text: text,
+      type: "info",
+      showCancelButton: false,
+      confirmButtonColor: "#DD6B55",
+      confirmButtonText: "Yes, delete it!",
+      closeOnConfirm: false,
+      html: false
+    }, function(){
+      
+    }); 
+  }
+  
+  myalert("mytitle","mytext");
+  
   alert("今天我们第一次看电影，我们看的是《战狼2》，你不喜欢看战争片，但你还是陪我看了，很开心，8月6日");
   alert("今天是星期六，你做了盐焗鸡翅，只是觉得好咸，除了鸡翅都是素菜，有茄子，凉拌黄瓜和凉拌木耳，你说你喜欢吃素菜，"+
         "虽然我有点不相信，但觉得挺高兴的， 8月5日");
